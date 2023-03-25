@@ -41,6 +41,8 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ### `add .env file`
 You need to add .env file and past this text to that file. `REACT_APP_BASE_URL="https://randomuser.me"`. It's mean that your api link based in here.
+### `video seft review `
+You can visit this link to see my video. `"https://www.loom.com/share/074fcd370bac4ae98a4f359b0c5f3b6c"`.
 
 ## Learn More
 
