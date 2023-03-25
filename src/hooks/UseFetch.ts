@@ -1,10 +1,5 @@
 import { useEffect, useState } from "react";
-
-export interface FetchResult<T> {
-  loading: boolean;
-  error?: any;
-  data?: T;
-}
+import { FetchResult } from "../types/Type"
 
 export function useFetch<TResult>(
   fetchFn: () => Promise<TResult>,

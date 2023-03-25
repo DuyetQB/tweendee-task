@@ -41,7 +41,7 @@ const Home = () => {
       sorter: (a: any, b: any) => a - b,
     },
     {
-      title: "icon",
+      title: "Icon",
       dataIndex: "thumbnail",
       key: "thumbnail",
       className: "ant-table-cell-coler",

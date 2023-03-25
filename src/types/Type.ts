@@ -12,3 +12,10 @@ export interface IprosTable {
   defaultPageSize?: number;
   rowSelection?: any;
 }
+
+
+export interface FetchResult<T> {
+  loading: boolean;
+  error?: any;
+  data?: T;
+}
