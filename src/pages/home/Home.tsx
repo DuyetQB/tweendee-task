@@ -1,5 +1,4 @@
 import MainTable from "../../components/table/Table";
-import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   requestListUserDetail,
@@ -28,7 +27,6 @@ const Home = () => {
           {
             <a>
               {item.name.title} {item.name.first} {item.name.last}
-              {console.log("ttt:", item)}
             </a>
           }
         </>
@@ -56,8 +54,6 @@ const Home = () => {
   ];
 
   const onChange = (pagination: any, filters: any, sorter: any, extra: any) => {
-    console.log("pagination.results:", pagination);
-
     dispatch(
       setRequestListUserDetail({
         ...requestListUserDetail,

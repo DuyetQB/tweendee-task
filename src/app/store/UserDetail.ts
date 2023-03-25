@@ -3,13 +3,13 @@ import { createSlice } from "@reduxjs/toolkit";
 import { RootState } from "./Store";
 
 const initialState = {
-    requestListUserDetail: {
-      page: DEFAULT_PAGE_INDEX,
-      results: DEFAULT_PAGE_SIZE,
-      sortField: '',
-      asc: false,
-    },
-  };
+  requestListUserDetail: {
+    page: DEFAULT_PAGE_INDEX,
+    results: DEFAULT_PAGE_SIZE,
+    sortField: "",
+    asc: false,
+  },
+};
 
 export const listUserDetail = createSlice({
   name: "UserDetail",
@@ -21,8 +21,8 @@ export const listUserDetail = createSlice({
   },
 });
 
-
 export const { setRequestListUserDetail } = listUserDetail.actions;
-export const requestListUserDetail = (state: RootState) => state.UserDetail.requestListUserDetail;
+export const requestListUserDetail = (state: RootState) =>
+  state.UserDetail.requestListUserDetail;
 
 export default listUserDetail.reducer;

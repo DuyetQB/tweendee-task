@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 export interface FetchResult<T> {
   loading: boolean;
@@ -6,7 +6,10 @@ export interface FetchResult<T> {
   data?: T;
 }
 
-export function useFetch<TResult>(fetchFn: () => Promise<TResult>, deps: unknown[] = []): FetchResult<TResult> {
+export function useFetch<TResult>(
+  fetchFn: () => Promise<TResult>,
+  deps: unknown[] = []
+): FetchResult<TResult> {
   const [result, setResult] = useState<FetchResult<TResult>>({
     loading: true,
   });
